@@ -1,0 +1,5 @@
+https://cocorahs.carto.com:443/api/v2/sql?q=select * from public.condition_monitoring
+
+
+https://cocorahs.carto.com:443/api/v2/sql?q=select * from public.acc_precip_test
+

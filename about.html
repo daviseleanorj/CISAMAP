@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Citizen Science Condition Monitoring</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="assets/css/about_style.css">
+
+        <!-- Add jQuery library -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!-- Add mousewheel plugin (this is optional) -->
+        <script type="text/javascript" src="assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+        <!-- Add fancyBox -->
+        <link rel="stylesheet" href="assets/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+        <!-- Optionally add helpers - button, thumbnail and/or media -->
+        <link rel="stylesheet" href="assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+        <script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+        <link rel="stylesheet" href="assets/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+        <script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Arvo', serif;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                    <!-- <img class="logo-main" src="img/logo_landscape.png" alt="Carolinas Integrated Sciences and Assesments" style="width:276px;height:112px;"></div> -->
+                    <img class="logo-main img-responsive" src="assets/img/logo_landscape.png" alt="Carolinas Integrated Sciences and Assesments" style="width:276px;height:112px;"></div>
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="about.html" title="Introduction" alt="Introduction">About</a>
+                        </li>
+                        <li><a href="index.html">Webmap</a>
+                        </li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScQtH-6_qDmZf3P4fdN4-U4mXdrm094bXxMMLtDBsr3eS70Fg/viewform" title="Feedback" alt="Feedback">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+<!--                         <h2>Condition</h2>
+                        <h2>Monitoring</h2> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section banner">
+            <div class="container">
+                <h3>Citizen science supporting a Drought Early Warning System</h3> 
+                <a class="btn btn-lg btn-default" href="http://www.cisa.sc.edu/cocorahs.html">Learn More</a> </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="page-header">
+                    <h3>About the Web Map</h3> 
+                </div>
+                <div class="main">
+                    <div class="container">
+                        <p>The web map is an experimental tool intended to depict local, community-level conditions and how recent weather and climate events have affected those communities. Volunteer observers provide weekly reports through the <a href="http://www.cocorahs.org/Content.aspx?page=aboutus" target="_blank">Community Collaborative Rain, Hail, and Snow</a> (CoCoRaHS) network website. The web map spatially displays the reports and provides other contextual information such as the current US Drought Monitor Map that can be used in the monitoring of drought onset, intensification, and recovery. </p>
+                    </div>
+                </div>
+                <div class="page-header">
+                    <h3>Using the Web Map</h3> 
+                </div>
+                <div class="main">
+                    <div class="container">
+                    </div>
+                </div>
+                <div class="content-container">
+                    <div class="section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6"> <a rel="gallery" class="fancybox" href="assets/img/big_image_1.png" title="CoCoRaHS Data"><img class="img-responsive img-center" src="assets/img/small_image_1.png" alt="" /></a><h5 id="imgtext">Click the image to learn more</h5></div>                                
+                                <div class="col-md-6">
+                                    <h1>CoCoRaHS Data</h1>
+                                    <p class="right-para">The condition monitoring web map is designed to work primarily with CoCoRaHS condition monitoring data. This data includes both precipitation measurements as well as qualitative descriptions of local conditions reported by observers. Click the observer point location in the web map to read the condition report in a pop up. Use the time slider at the bottom of the  page to sort through past reports.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section container">
+                        <div class="row">
+                            <!-- <div class="col-md-6" style="text-align: center;"> <img src="img/ndmc-image2.png" style="width:460px;height:345px;padding-top:30px;"> </div> -->
+                            <div class="col-md-6">
+                                <h1>U.S. Drought Monitor</h1>
+                                <p class="left-para">The <a href="http://drought.unl.edu/" target="_blank">National Drought Mitigation Center</a> (NDMC) publishes a weekly report of US drought conditions through  the <a href="http://droughtmonitor.unl.edu/" target="_blank">U.S. Drought Monitor</a> (USDM).  It is jointly produced by  NDMC at the University of Nebraska-Lincoln, the US Department of Agriculture, and the National Oceanic and Atmospheric Administration (NOAA). The USDM map is available as a layer in the  web map, allowing a comparison of condition monitoring reports with USDM drought designations. Use the time slider to sort through weekly time intervals. </p>
+                            </div>
+                            <div class="col-md-6" style="text-align: center;"> <a rel="gallery"class="fancybox" href="assets/img/big_image_2.png" title="U.S. Drought Monitor"><img class="img-responsive img-center" src="assets/img/small_image_2.png" alt="" /></a><h5 id="imgtext">Click the image to learn more</h5></div>
+                        </div>
+                    </div>
+                    <div class="section container">
+                        <div class="row">
+                            <div class="col-md-6"> <a rel="gallery" class="fancybox" href="assets/img/big_image_3.png" title="More Map Layers"><img class="img-responsive img-center" src="assets/img/small_image_3.png" alt="" /></a><h5 id="imgtext">Click the image to learn more</h5></div>
+                            <div class="col-md-6">
+                                <h1>More Map Layers</h1>
+                                <p class="left-para">The layer control in the top right portion of the screen can be used to turn overlay data on and off. Additional map layers include  the National Weather Service forecast offices, US Climate Divisions, South Carolina and North Carolina county lines, ecological regions, and HUC-6 watershed boundaries.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1>Become a CoCoRaHS Condition Monitoring Observer</h1>
+                                <p class="left-para"><b>Who can participate</b>... Anyone with a desire to learn more about how weather can impact our lives and an enthusiasm for watching and reporting weather conditions can join. Consistent reporting will contribute to a more complete understanding of the weather and climate. Additionally, observers will get the chance to participate in an enthusiastic network of like-minded citizen scientists. Click <a href="http://www.cisa.sc.edu/cocorahs.html">here</a> to learn more about CoCoRaHS condition monitoring.</p>
+                            </div>
+                            <div class="col-md-6" style="text-align:center;padding-top:50px;padding-left:70px;"> <img class="img-responsive img-center" src="assets/img/notes.png"> </div>
+                        </div>
+                    </div>                                               
+                </div>
+                <div class="section container">
+                        <div class="row">
+                            <div class="col-md-6" style="text-align:center;padding-top:50px;padding-left:70px;"> <img class="img-responsive img-center" src="assets/img/gauge.jpg"></div>
+                            <div class="col-md-6">
+                                <h1>About the Project</h1>
+                                <p class="left-para">The web map is part of a  project to assess how information provided by citizen scientists can support drought-related decision making. With support from the <a href="https://www.drought.gov/drought/" target="_blank">National Integrated Drought Information System</a> (NIDIS),  the <a href="http://cisa.sc.edu/projects_nidis.html" target="_blank">Carolinas Integrated Sciences &amp; Assessments</a> (CISA) team is collaborating with the CoCoRaHS to establish the condition monitoring program. In addition to their daily precipitation measurements, CoCoRaHS volunteers are asked to provide descriptions of the conditions in their local community in order to assess how recent weather patterns have influenced these conditions. These reports are then displayed on the web map.</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="container">
+                    <div class="page-header">
+                        <h3>Collaborators</h3> 
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>CoCoRaHS</h4>
+                            <ul>
+                                <li>Community Collaborative Rain, Hail &amp; Snow Network</li>
+                            </ul>
+                            <div><a href="http://www.cocorahs.org/Content.aspx?page=aboutus"><img id="logo" src="assets/img/coco-logo.png" style="width:96px;height:96px;"></a></div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>NDMC</h4>
+                            <ul>
+                                <li>National Drought Mitigation Center</li>
+                            </ul>
+                            <div><a href="http://drought.unl.edu/AboutUs.aspx"><img id="logo" src="assets/img/ndmc-logo.png" style="width:150px;height:67px;"></a></div>
+                        </div>                    
+                        <div class="col-md-4">
+                            <h4>NIDIS</h4>
+                            <ul>
+                                <li>National Integrated Drought Information System</li>
+                            </ul>
+                            <div><a href="https://www.drought.gov/drought/what-nidis"><img id="logo" src="assets/img/nidis-logo.png" style="width:81px;height:78px;"></a></div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>CISA</h4>
+                            <ul>
+                                <li>Carolinas Integrated Sciences &amp; Assessments</li>
+                            </ul>
+                            <div><a href="http://www.cisa.sc.edu/"><img id="logo" src="assets/img/CISAlogoTEXT.png" style="width:150px;height:57px;"></a></div>
+                        </div>                        
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <p>&copy; CISA</p>
+                <p class="a-center"><a href="http://www.cisa.sc.edu/"><img id="logo" src="assets/img/CISAJustCircle2.png" alt="citizen science" style="width:50px;height:52px;"></a>
+                </p>
+                <p class="a-right"><a href="http://sc.edu/">University of South Carolina</a></p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".fancybox").fancybox();
+            });
+        </script>
+    </body>
+</html>
