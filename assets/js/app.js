@@ -151,9 +151,9 @@ function getDate(){
 
 var dmDate = "_current"; //Hard coded date that needs to be set changing release date
 
-var ndmc_wms = L.tileLayer.wms( "http://torka.unl.edu:8080/cgi-bin/mapserv.exe",{
-  map: "/ms4w/apps/dm/service/usdm"+dmDate+"_wms.map",
-  layers: "usdm"+dmDate,
+var ndmc_wms = L.tileLayer.wms( "http://ndmc-001.unl.edu:8080/cgi-bin/mapserv.exe",{
+  map: "/ms4w/apps/usdm/service/usdm_current_wms.map",
+  layers: "usdm_current",
   styles: "default",
   format: "image/png",
   crs: L.CRS.EPSG900913,
@@ -452,6 +452,8 @@ var groupedOverlays = {
     "Weather Forecast Off.": wfo,
     "Ecological Regions": eco,
     "HUC-6 Water Basins": huc
+    "Funding"
+    "National Integrated Drought Information System(NIDIS)"
   }
 };
 
