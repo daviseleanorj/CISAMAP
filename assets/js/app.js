@@ -448,7 +448,7 @@ var groupedOverlays = {
     "NC & SC Counties": cnty,
     //"U.S. Drought Monitor": ndmc_wms,
     "Current USDM": ndmc_wms,
-    "NOAA Climate Div.": climadiv,
+    "NOAA2 Climate Div.": climadiv,
     "Weather Forecast Off.": wfo,
     "Ecological Regions": eco,
     "HUC-6 Water Basins": huc
