@@ -456,12 +456,8 @@ var groupedOverlays = {
   },
 };
 
-var testLabel = {
-  "some Test":{
-  }
-};
 
-var layerControl = L.control.groupedLayers(testLabel, groupedOverlays, {
+var layerControl = L.control.groupedLayers(baseLayers, groupedOverlays, {
   collapsed: isCollapsed
 }).addTo(map);
 
