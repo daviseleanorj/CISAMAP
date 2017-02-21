@@ -441,11 +441,11 @@ var baseLayers = {
 };
 
 var groupedOverlays = {
-  "CM Reports": {
+  "CM Report": {
     "Weekly Reports": cmLayer
     //"<img src='assets/img/cm-point.png' width='18' height='18'>&nbsp;Weekly"
   },
-  "Ref Layers": {
+  "Reference Layers": {
     "NC & SC Counties": cnty,
     //"U.S. Drought Monitor": ndmc_wms,
     "Current USDM": ndmc_wms,
