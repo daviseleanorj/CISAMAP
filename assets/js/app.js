@@ -453,17 +453,12 @@ var groupedOverlays = {
     "Weather Forecast Off.": wfo,
     "Ecological Regions": eco,
     "HUC-6 Water Basins": huc
-  },
-};
-
-var testLabel = {
-  "some Test":{
   }
 };
 
-var layerControl = L.control.groupedLayers(testLabel, groupedOverlays, {
+var layerControl = L.control.groupedLayers(baseLayers, groupedOverlays, {
   collapsed: isCollapsed
-}).addTo(map);
+  }).addTo(map);
 
 /* Highlight search box text on click */
 $("#searchbox").click(function () {
