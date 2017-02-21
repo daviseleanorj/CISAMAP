@@ -440,12 +440,12 @@ var baseLayers = {
   "Aerial Imagery": usgsImagery
 };
 
-
 var groupedOverlays = {
   "CM Reports": {
     "Weekly Reports": cmLayer
+    //"<img src='assets/img/cm-point.png' width='18' height='18'>&nbsp;Weekly"
   },
-  "Reference Layers": {
+  "Ref Layers": {
     "NC & SC Counties": cnty,
     //"U.S. Drought Monitor": ndmc_wms,
     "Current USDM": ndmc_wms,
@@ -458,7 +458,7 @@ var groupedOverlays = {
 
 var layerControl = L.control.groupedLayers(baseLayers, groupedOverlays, {
   collapsed: isCollapsed
-  }).addTo(map);
+}).addTo(map);
 
 /* Highlight search box text on click */
 $("#searchbox").click(function () {

@@ -27,7 +27,7 @@ $.getJSON("assets/data/state.geojson", function (data) {
 
 ////////////////CLIMATE DIVISION//////////////////////
 //Hosted in CartoDB
-var climaDivColors = {"1":"#ffed6f", "2":"#1F78B4", "3":"#bebada", "4":"#fb8072",
+var climaDivColors = {"1":"#ffed6f", "2":"#ffed6f", "3":"#bebada", "4":"#fb8072",
     "5":"#1F78B4", "6":"#E31A1C", "7":"#B2DF8A", "8":"#33A02C", "9":"#1F78B4",
     "9":"#FF5C00", "10":"#ffed6f","11":"#6A3D9A", "12":"#E31A1C", "13":"#6A3D9A",
     "14":"#B2DF8A", "15":"#33A02C"};
