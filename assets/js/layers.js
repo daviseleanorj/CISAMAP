@@ -27,7 +27,7 @@ $.getJSON("assets/data/state.geojson", function (data) {
 
 ////////////////CLIMATE DIVISION//////////////////////
 //Hosted in CartoDB
-var climaDivColors = {"1":"#ffed6f", "2":"#ffed6f", "3":"#bebada", "4":"#fb8072",
+var climaDivColors = {"1":"#ffed6f", "2":"#1F78B4", "3":"#bebada", "4":"#fb8072",
     "5":"#1F78B4", "6":"#E31A1C", "7":"#B2DF8A", "8":"#33A02C", "9":"#1F78B4",
     "9":"#FF5C00", "10":"#ffed6f","11":"#6A3D9A", "12":"#E31A1C", "13":"#6A3D9A",
     "14":"#B2DF8A", "15":"#33A02C"};
@@ -177,61 +177,67 @@ $.getJSON("https://cisa.cartodb.com/api/v2/sql/?format=GeoJSON&q=SELECT * FROM e
 });
 
 ///////////////////COUNTIES////////////
+var layerUrl = 'https://cisa.carto.com/api/v2/viz/5ae89ac8-e221-11e5-afb0-0e674067d321/viz.json';
+cartodb.createLayer(map, layerUrl).addTo(map);
+
+
+
+
 //Hosted in CartoDB
-var cnty = L.geoJson(null, {
-  style: function (feature) {
-      return {
-        color: "#939393",
-        // color: "#f5f5f3",
-        weight: .75,
-        opacity: .75,
-        fillOpacity: 0.05
-      };  
-  },
-  onEachFeature: function (feature, layer) {
+// var cnty = L.geoJson(null, {
+//   style: function (feature) {
+//       return {
+//         color: "#939393",
+//         // color: "#f5f5f3",
+//         weight: .75,
+//         opacity: .75,
+//         fillOpacity: 0.05
+//       };  
+//   },
+//   onEachFeature: function (feature, layer) {
 
-    function addLabel() {
-      var label = L.marker(layer.getBounds().getCenter(), {
-        icon: L.divIcon({
-          className: 'label',
-          html: feature.properties.cntyname,
-          iconSize: [100, 40]
-        })
-      }).addTo(map);
-    };
+//     function addLabel() {
+//       var label = L.marker(layer.getBounds().getCenter(), {
+//         icon: L.divIcon({
+//           className: 'label',
+//           html: feature.properties.cntyname,
+//           iconSize: [100, 40]
+//         })
+//       }).addTo(map);
+//     };
 
-    if (feature.properties) {
-      var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th>County</th><td>" + feature.properties.cntyname + "</td></tr>" + "<tr><th>State</th><td>" + feature.properties.state + "</td></tr>" + "<table>";
-      layer.on({
-        click: function (e) {
-          $("#feature-title").html('NC and SC Counties');
-          $("#feature-info").html(content);
-          $("#featureModal").modal("show");
+//     if (feature.properties) {
+//       var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th>County</th><td>" + feature.properties.cntyname + "</td></tr>" + "<tr><th>State</th><td>" + feature.properties.state + "</td></tr>" + "<table>";
+//       layer.on({
+//         click: function (e) {
+//           $("#feature-title").html('NC and SC Counties');
+//           $("#feature-info").html(content);
+//           $("#featureModal").modal("show");
 
-        }
-      });
-    }
-    layer.on({
-      mouseover: function (e) {
-        var layer = e.target;
-        layer.setStyle({
-          weight: 0,
-          color: "#00FFFF",
-          opacity: .1
-        });
-        if (!L.Browser.ie && !L.Browser.opera) {
-          layer.bringToFront();
-        }
-      },
-      mouseout: function (e) {
-        cnty.resetStyle(e.target);
-      }
-    });
-  }
-});
-$.getJSON("https://cisa.cartodb.com/api/v2/sql/?format=GeoJSON&q=SELECT * FROM counties_merge_simple", function (data) {
-  cnty.addData(data);
-});
+//         }
+//       });
+//     }
+//     layer.on({
+//       mouseover: function (e) {
+//         var layer = e.target;
+//         layer.setStyle({
+//           weight: 0,
+//           color: "#00FFFF",
+//           opacity: .1
+//         });
+//         if (!L.Browser.ie && !L.Browser.opera) {
+//           layer.bringToFront();
+//         }
+//       },
+//       mouseout: function (e) {
+//         cnty.resetStyle(e.target);
+//       }
+//     });
+//   }
+// });
+// $.getJSON("https://cisa.cartodb.com/api/v2/sql/?format=GeoJSON&q=SELECT * FROM counties_merge_simple", function (data) {
+//   cnty.addData(data);
+// });
 
 
 ///////////////////ECO REGIONS////////////
